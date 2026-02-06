@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 import { nanoid } from "nanoid";
-import { requireEnv, env, normalizeCanvasBaseUrl } from "@/lib/env";
-import { encryptString } from "@/lib/crypto";
-import { getDb } from "@/lib/mongo";
-import { canvasGetSelf } from "@/lib/canvas";
+import { requireEnv, env, normalizeCanvasBaseUrl } from "../../../lib/env";
+import { encryptString } from "../../../lib/crypto";
+import { getDb } from "../../../lib/mongo";
+import { canvasGetSelf } from "../../../lib/canvas";
 import { setConnectionCookie } from "../_cookies";
 
 export const runtime = "nodejs";
