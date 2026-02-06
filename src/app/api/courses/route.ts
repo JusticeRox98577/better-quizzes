@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
-import { requireEnv, env } from "@/lib/env";
-import { getDb } from "@/lib/mongo";
-import { decryptString } from "@/lib/crypto";
-import { canvasListCourses } from "@/lib/canvas";
+import { requireEnv, env } from "../../../lib/env";
+import { getDb } from "../../../lib/mongo";
+import { decryptString } from "../../../lib/crypto";
+import { canvasListCourses } from "../../../lib/canvas";
 import { getConnectionIdFromCookie } from "../_cookies";
 
 export const runtime = "nodejs";
